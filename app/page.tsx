@@ -1,3 +1,5 @@
+import MonitorScreen from "./components/MonitorScreen";
+
 export default function Home() {
   return (
     <main
@@ -11,6 +13,20 @@ export default function Home() {
       }}
     >
       {/*  monitor screen div here */}
+      <div
+        style={{
+          position: "absolute",
+          top: "4.5%",
+          left: "26%",
+          width: "48%",
+          height: "53%",
+          backgroundColor: "rgba(0, 0, 0, 0.8)", // temporary highlight
+          backdropFilter: "blur(4px)",
+        }}
+      >
+      <MonitorScreen />
+      </div>
+      
     </main>
   );
 }
